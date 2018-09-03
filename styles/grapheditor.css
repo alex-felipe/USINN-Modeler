@@ -200,7 +200,7 @@
 	text-decoration:none;
 }
 .geMenubarContainer {
-	background-color:#33333d; /*Cor do menu superior*/
+	background-color:#263238; /*Cor do menu superior*/
 	height: 80px;
 }
 .geMenubar {
@@ -214,7 +214,7 @@
 
 }
 .geMenubarContainer .geItem:hover {
-	background:#6fc701;
+	background:#1E88E5;
 }
 .mxDisabled:hover {
 	background:inherit !important;
