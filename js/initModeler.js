@@ -229,7 +229,7 @@ function init(editor){
 		};
 		
 		// ['group', 'ungroup', 'cut', 'copy', 'paste', 'delete', 'undo', 'redo', 'print', 'show']
-		var icons = [['new'],['save'],['group', 'ungroup'], ['cut', 'copy', 'paste'], ['delete'], ['undo', 'redo'], ['print', 'image'], ['zoomIn', 'zoomOut', 'fit']];
+		var icons = [['new'],['save'],['group', 'ungroup'], ['cut', 'copy', 'paste'], ['delete'], ['undo', 'redo'], ['print', 'image'], ['zoomin', 'zoomout', 'fit']];
 
 
 		var i = 0;
