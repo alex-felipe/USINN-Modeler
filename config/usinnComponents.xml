@@ -397,7 +397,7 @@
 				<add as="labelBackgroundColor" value="none"/>
 				<add as="rounded" value="1"/>
 				<add as="edgeStyle" value="elbowEdgeStyle"/>
-				<add as="endArrow" value="classic"/>
+				<add as="endArrow" value="block"/>
 				<add as="fontColor" value="black"/>
 				<add as="fontSize" value="12"/>
 				<add as="align" value="center"/>
@@ -548,7 +548,7 @@
 					   	
 					editor.defaultEdge = editor.templates["queryDataEdge"];
 					editor.defaultEdge.style = 'queryDataEdge';
-					var icon = editor.graph.insertVertex(editor.defaultEdge, null, 'Label', 0, 0, 20, 30,
+					var icon = editor.graph.insertVertex(editor.defaultEdge, null, 'Label', 0, 0, 15, 20,
 						'shape=datastore;labelBackgroundColor=#ffffff;labelPosition=left;spacingRight=2;align=right;fontStyle=0;fillColor=white;strokeColor=black;fontColor=black;');
 					icon.geometry.offset = new mxPoint(-10, -25);
 					icon.geometry.relative = true;
