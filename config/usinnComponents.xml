@@ -594,7 +594,7 @@
 		<br/>
 		<add as="Ação do Usuário Obrigatória" template="requiredUserAction" icon="images/acaoDoUsuarioObrigatoria.GIF"/>
 		<br/>
-		<add as="Conteúdo de Alerta" template="notificationAlertOrConfirmation" icon="images/alertaDeNotificacao.gif"/>
+		<add as="Conteúdo de Alerta" template="notificationAlertOrConfirmation" icon="images/AlertaDeNotificacao.GIF"/>
 		<br/>
 		<add as="Indicador de Progresso" template="progressIndicator" icon="images/indicadorDeProgresso.GIF"/>
 		<br/>
