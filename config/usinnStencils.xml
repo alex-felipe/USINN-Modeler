@@ -3,7 +3,7 @@
 
 	<shape name="presentationUnit" strokewidth="inherit" h="300" w="400">
 	    <background>
-	    	<roundrect h="300" w="400" x="0" y="0" arcsize="10"/>
+	    	<roundrect h="300" w="400" x="0" y="0" arcsize="5"/>
 	    </background>
 	    <foreground>
 	    	<fillstroke/>
@@ -198,7 +198,9 @@
 	    </foreground>
 	</shape>
 
-	<shape h="91.81" name="user" strokewidth="inherit" w="94">
+
+
+	<shape h="91.81" name="actor" strokewidth="inherit" w="94">
 	    <connections/>
 	    <background>
 	        <path>
@@ -249,6 +251,7 @@
 	        <fillstroke/>
 	    </foreground>
 	</shape>
+
 
 	<shape name="jump-in" h="100" w="100" strokewidth="inherit" aspect="fixed">
 		<background>
@@ -338,5 +341,35 @@
 		<foreground>
 			<fillstroke/>
 		</foreground>
+	</shape>
+
+
+	<!-- 
+
+var width = w/3;
+c.moveTo(0, h);
+c.curveTo(0, 3 * h / 5, 0, 2 * h / 5, w / 2, 2 * h / 5);
+c.curveTo(w / 2 - width, 2 * h / 5, w / 2 - width, 0, w / 2, 0);
+c.curveTo(w / 2 + width, 0, w / 2 + width, 2 * h / 5, w / 2, 2 * h / 5);
+c.curveTo(w, 2 * h / 5, w, 3 * h / 5, w, h);
+c.close();
+
+	-->
+
+	<shape h="100" w="100" name="user" strokewidth="inherit" >
+	    <connections/>
+	    <background>
+	        <path>
+	        	<move x="100" y="100"/>
+	        	<arc rx="44.5" ry="44.5" x-axis-rotation="0" large-arc-flag="1" sweep-flag="0" x="0" y="100"/>
+	            <close/>
+	        </path>
+	    </background>
+	    <foreground>
+	        <fillstroke/>
+	        <stroke/>
+	        	<ellipse x="25" y="0" w="50" h="50"/>
+	        <fillstroke/>
+	    </foreground>
 	</shape>
 </shapes>

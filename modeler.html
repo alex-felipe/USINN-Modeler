@@ -8,7 +8,6 @@
     <!-- Estilos bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/offcanvas.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <!-- CSS Files -->
     <link href="css/style.css" rel="stylesheet" />
@@ -16,7 +15,7 @@
   <body class="bg-dark" onload="createEditor('config/usinnComponents.xml');">
 
   	<!-- Menu principal -->
-  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
   	  <div class="container">
   	    <div class="navbar-translate">
   	      <a class="navbar-brand" href="index.html"><b>USINN Modeler</b></a>
@@ -34,39 +33,21 @@
           <textarea id="xml" style="font-size: 10px;width: 500px;" hidden="hidden"></textarea>
   	      <ul class="navbar-nav">
   	        <li class="dropdown nav-item">
-  	          <a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">Arquivo</a>
+  	          <a href="" class="dropdown-toggle nav-link disabled" data-toggle="dropdown">Arquivo</a>
   	          <div class="dropdown-menu">
-  	            <a href="#" class="dropdown-item">Novo</a>
-  	            <a href="#" class="dropdown-item">Abrir</a>
+  	            <a href="#" class="dropdown-item disabled">Novo</a>
+  	            <a href="#" class="dropdown-item disabled">Abrir</a>
   	            <div class="dropdown-divider"></div>
-  	            <a href="#" class="dropdown-item">Salvar</a>
-  	            <a href="#" class="dropdown-item">Salvar em</a>
+  	            <a href="#" class="dropdown-item disabled">Salvar</a>
+  	            <a href="#" class="dropdown-item disabled">Salvar em</a>
   	            <div class="dropdown-divider"></div>
-  	            <a href="#" class="dropdown-item">Importar...</a>
-  	            <a href="#" class="dropdown-item">Exportar...</a>
+  	            <a href="#" class="dropdown-item disabled">Importar...</a>
+  	            <a href="#" class="dropdown-item disabled">Exportar...</a>
   	          </div>
   	        </li>
 
-  	        <li class="dropdown nav-item">
-  	          <a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">Editar</a>
-  	          <div class="dropdown-menu">
-  	          </div>
-  	        </li>
-
-  	        <li class="dropdown nav-item">
-  	          <a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">Visualizar</a>
-  	          <div class="dropdown-menu">
-  	          </div>
-  	        </li>
-
-  	        <li class="dropdown nav-item">
-  	          <a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">Organizar</a>
-  	          <div class="dropdown-menu">
-  	          </div>
-  	        </li>
-
-  	        <li class="dropdown nav-item">
-  	          <a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">Extras</a>
+  	        <li class="dropdown nav-item ">
+  	          <a href="" class="dropdown-toggle nav-link disabled" data-toggle="dropdown">Visualizar</a>
   	          <div class="dropdown-menu">
   	          </div>
   	        </li>
@@ -74,6 +55,7 @@
   	        <li class="dropdown nav-item">
   	          <a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">Ajuda</a>
   	          <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Acessar apresentação</a>
   	          </div>
   	        </li>
   	      </ul>
@@ -83,27 +65,27 @@
 
   	<!-- Menu de ferramentas -->
 	<nav id="menu-ferramentas" class="nav nav-underline nav-scroller bg-white shadow-sm">
-		<div class="container"  hidden="hidden">
+		<div class="container" style="margin-left: 20px;" >
 			<div id="mainActions"
 				style="width:100%;padding-top:8px;padding-left:24px;padding-bottom:8px;">
 			</div>
-			<div id="selectActions" style="width:100%;padding-left:54px;padding-bottom:4px;">
+			<div id="selectActions" style="width:100%;padding-left:54px;padding-bottom:4px;" hidden="hidden">
 			</div>
 		</div>
 	</nav>
 
 
-  	<main role="main" class="row" style="height: 550px;">
+  	<main role="main" class="row" style="height: 700px;">
   		<!-- Barra Lateral -->
-  		<div class="col-1 h-100 bg-primary" style="background-color: blue;">
-  			<div id="toolbar" >
+  		<div class="col-2 h-80 bg-light" style="background-color: blue;">
+  			<div id="toolbar" class="h-100">
   			</div>
         
   			<br>
   		</div>
 
   		<!-- Editor -->
-  		<div id="graph" class="col-11 bg-white">
+  		<div id="graph" class="col-10 bg-white" style="position:relative;overflow:hidden;background:url('images/grid.gif');cursor:default;">
   			<center id="splash">
   				<img src="images/loading.gif">
   			</center>
@@ -115,11 +97,11 @@
   		</div>
 
 
-  		<div id="zoomActions" style="width:100%;padding-left:54px;padding-top:4px;">
+  		<div id="zoomActions" style="width:100%;padding-left:54px;padding-top:4px;" hidden="hidden">
   		</div>
-  		<div id="footer">
+  		<div id="footer" hidden="hidden">
   			<p id="status">
-  				<!-- Status Here -->Loading...
+  				<!-- Status Here -->Carregando...
   			</p>
   			<br/>
   		</div>

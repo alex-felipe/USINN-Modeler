@@ -124,7 +124,7 @@ function init(editor){
 
 		// Create select actions in page
 		var node = document.getElementById('mainActions');
-		var buttons = ['group', 'ungroup', 'cut', 'copy', 'paste', 'delete', 'undo', 'redo', 'print', 'show'];
+		var buttons = ['new', 'save','group', 'ungroup', 'cut', 'copy', 'paste', 'delete', 'undo', 'redo', 'print', 'show', 'zoomIn', 'zoomOut', 'fit'];
 		
 		// Only adds image and SVG export if backend is available
 		// NOTE: The old image export in mxEditor is not used, the urlImage is used for the new export.
@@ -229,36 +229,50 @@ function init(editor){
 		};
 		
 		// ['group', 'ungroup', 'cut', 'copy', 'paste', 'delete', 'undo', 'redo', 'print', 'show']
-		var icons = ['format_shapes', 'ungroup', 'crop', 'file_copy', 'paste', 'delete', 'undo', 'redo', 'print', 'file'];
-		for (var i = 0; i < buttons.length; i++)
-		{
-			var button = document.createElement('button');
-			button.id = buttons[i];
-			button.classList.add('btn');
-			button.classList.add('bg-light');
-			button.classList.add('btn-sm');
-			
-			button.classList.add('btn-fab');
+		var icons = [['new'],['save'],['group', 'ungroup'], ['cut', 'copy', 'paste'], ['delete'], ['undo', 'redo'], ['print', 'image'], ['zoomIn', 'zoomOut', 'fit']];
 
 
-			var icon = document.createElement("i");
-			icon.innerHTML = icons[i]
-			icon.classList.add("material-icons");
+		var i = 0;
+		for(var j = 0; j < icons.length;j++){
+			var group = document.createElement('div');
+			group.classList.add('btn-group');
 
-			button.appendChild(icon);
-			mxUtils.write(button, "");
-		
-			var factory = function(name)
-			{
-				return function()
+			for(k = 0; k < icons[j].length;k++){
+				var button = document.createElement('a');
+				button.id = buttons[i];
+				button.classList.add('btn');
+				button.classList.add('bg-light');
+				button.classList.add('btn-sm');
+				if(i == 0 || i == 1){
+					button.classList.add('disabled');
+				}
+
+				var icon = document.createElement("img");
+				icon.src="images/"+ icons[j][k] +".gif";
+
+				button.appendChild(icon);
+				mxUtils.write(button, "");
+				
+				var factory = function(name)
 				{
-					editor.execute(name);
+					return function()
+					{
+						editor.execute(name);
+					};
 				};
-			};
-		
-			mxEvent.addListener(button, 'click', factory(buttons[i]));
-			node.appendChild(button);
+				
+				mxEvent.addListener(button, 'click', factory(buttons[i]));
+
+				group.appendChild(button);
+				i++;
+				
+			}
+
+			node.appendChild(group);
+
 		}
+
+
 
 		// Create select actions in page
 		var node = document.getElementById('selectActions');

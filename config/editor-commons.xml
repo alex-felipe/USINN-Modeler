@@ -24,14 +24,14 @@
 			<add as="toFront" action="toFront" icon="images/tofront.gif" if="cell"/>
 			<add as="toBack" action="toBack" icon="images/toback.gif" if="cell"/>
 			<separator/>
-			<add as="editStyle" action="editStyle" if="cell"/>
+			<!--<add as="editStyle" action="editStyle" if="cell"/>-->
 		</add>
 		<add as="format" if="cell">
 			<add as="fillColor" action="fillColor" icon="images/fillcolor.gif" if="cell"/>
 			<add as="gradientColor" action="gradientColor" if="cell"/>
 			<add as="strokeColor" action="strokeColor" icon="images/linecolor.gif" if="cell"/>
 			<separator/>
-			<add as="toggleRounded" action="toggleRounded" if="cell"/>
+			<!--<add as="toggleRounded" action="toggleRounded" if="cell"/>-->
 			<add as="toggleShadow" action="toggleShadow" if="cell"/>
 		</add>
 		<add as="font" if="cell">
@@ -45,7 +45,7 @@
 		<separator/>
 		<add as="properties" action="showProperties" icon="images/properties.gif"/>
 		<separator/>
-		<add as="openHref" action="openHref" icon="images/link.gif"/>
+		<!--<add as="openHref" action="openHref" icon="images/link.gif"/>-->
 	</mxDefaultPopupMenu>
 	<include name="config/keyhandler-commons.xml"/>
 	<Array as="actions">
