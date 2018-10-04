@@ -576,22 +576,22 @@
 		<add as="Image" template="image" icon="images/image.gif"/>
 	-->
 
-		<add as="Unidade de Apresentação" template="presentationUnit" icon="images/objetivoDoUsuario.gif"/>
-		<add as="Ponto de Abertura" template="openingPoint" icon="images/pontoDeAbertura.gif"/>
-		<add as="Ponto de Encerramento" template="closurePoint" icon="images/pontoDeFechamento.gif"/>
+		<add as="Unidade de Apresentação" template="presentationUnit" icon="images/objetivoDoUsuario.GIF"/>
+		<add as="Ponto de Abertura" template="openingPoint" icon="images/pontoDeAbertura.GIF"/>
+		<add as="Ponto de Encerramento" template="closurePoint" icon="images/pontoDeFechamento.GIF"/>
 
 		<hr/>
 
 		
-		<add as="Ação do Usuário" template="userAction" icon="images/acaoDoUsuario.gif"/>
-		<add as="Processo do Sistema" template="systemProcess" icon="images/processoDoSistema.gif"/>
+		<add as="Ação do Usuário" template="userAction" icon="images/acaoDoUsuario.GIF"/>
+		<add as="Processo do Sistema" template="systemProcess" icon="images/processoDoSistema.GIF"/>
 		<hr/>
-		<add as="Unidade de Apresentação" template="alwaysAccessiblePresentationUnit" icon="images/unidadeApresentacaoSA.gif"/>
-		<add as="Ação do Usuário Obrigatória" template="requiredUserAction" icon="images/acaoDoUsuarioObrigatoria.gif"/>
-		<add as="Conteúdo de Alerta" template="notificationAlertOrConfirmation" icon="images/alertaDeNotificacao.gif"/>
-		<add as="Indicador de Progresso" template="progressIndicator" icon="images/indicadorDeProgresso.gif"/>
+		<add as="Unidade de Apresentação" template="alwaysAccessiblePresentationUnit" icon="images/unidadeApresentacaoSA.GIF"/>
+		<add as="Ação do Usuário Obrigatória" template="requiredUserAction" icon="images/acaoDoUsuarioObrigatoria.GIF"/>
+		<add as="Conteúdo de Alerta" template="notificationAlertOrConfirmation" icon="images/alertaDeNotificacao.GIF"/>
+		<add as="Indicador de Progresso" template="progressIndicator" icon="images/indicadorDeProgresso.GIF"/>
 		<br/>
-		<add as="Coleção de Dados" template="dataCollection" icon="images/colecaoDados3.gif"/>
+		<add as="Coleção de Dados" template="dataCollection" icon="images/colecaoDados3.GIF"/>
 
 
 
