@@ -334,6 +334,7 @@
 				<add as="align" value="center"/>
 				<add as="verticalAlign" value="bottom"/>
 				<add as="strokeColor" value="black"/>
+				<add as="fontColor" value="black"/>
 			</add>
 
 			<add as="userTransitionEdge">
@@ -583,11 +584,16 @@
 		<hr/>
 
 		
-		<add as="Ação do Usuário" template="userAction" icon="images/acaoDoUsuario.GIF"/>
 		<add as="Processo do Sistema" template="systemProcess" icon="images/processoDoSistema.GIF"/>
+		<br/>
+		<add as="Ação do Usuário" template="userAction" icon="images/acaoDoUsuario.GIF"/>
+		
+		
 		<hr/>
 		<add as="Unidade de Apresentação" template="alwaysAccessiblePresentationUnit" icon="images/unidadeApresentacaoSA.GIF"/>
+		<br/>
 		<add as="Ação do Usuário Obrigatória" template="requiredUserAction" icon="images/acaoDoUsuarioObrigatoria.GIF"/>
+		<br/>
 		<add as="Conteúdo de Alerta" template="notificationAlertOrConfirmation" icon="images/alertaDeNotificacao.GIF"/>
 		<br/>
 		<add as="Indicador de Progresso" template="progressIndicator" icon="images/indicadorDeProgresso.GIF"/>
