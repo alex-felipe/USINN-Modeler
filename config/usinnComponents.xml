@@ -589,6 +589,7 @@
 		<add as="Unidade de Apresentação" template="alwaysAccessiblePresentationUnit" icon="images/unidadeApresentacaoSA.GIF"/>
 		<add as="Ação do Usuário Obrigatória" template="requiredUserAction" icon="images/acaoDoUsuarioObrigatoria.GIF"/>
 		<add as="Conteúdo de Alerta" template="notificationAlertOrConfirmation" icon="images/alertaDeNotificacao.GIF"/>
+		<br/>
 		<add as="Indicador de Progresso" template="progressIndicator" icon="images/indicadorDeProgresso.GIF"/>
 		<br/>
 		<add as="Coleção de Dados" template="dataCollection" icon="images/colecaoDados3.GIF"/>
